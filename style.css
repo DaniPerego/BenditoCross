@@ -16,7 +16,7 @@ body {
 
 /* Barra de Navegación */
 .navbar {
-  background: var(--color-rojo);
+  background: white;
   height: 60px;
   display: flex;
   justify-content: space-between;

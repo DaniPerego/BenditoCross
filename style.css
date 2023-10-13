@@ -61,7 +61,7 @@ body {
   bottom: 0;
   width: 0;
   height: 2px;
-  background: var(--color-verde);
+  background: var(--color-gris);
   transition: all 0.5s;
 }
 .nav_items a:hover::before{
@@ -235,7 +235,7 @@ h2 {
     position: absolute;
     left: 0;
     top: 60px;
-    background: rgba(184, 238, 212, 0.79);
+    background: rgba(255, 0, 0, 0.719);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -245,7 +245,7 @@ h2 {
   }
   .nav_items a{
     text-align: center;
-    color: var(--color-azulado);
+    color: var(--color-blanco);
   }
   .nav_toggle {
     display: flex !important;
@@ -255,7 +255,7 @@ h2 {
   .nav_toggle span{
     width: 30px;
     height: 4px;
-    background:var(--color-verde);
+    background:var(--color-blanco);
     margin-bottom: 5px;
     border-radius: 2px;
     transform-origin: 5px 0px;

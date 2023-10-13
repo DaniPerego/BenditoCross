@@ -37,7 +37,7 @@ body {
 .nav_logo span{
   display: flex;
   flex-direction: column;
-  width: 20px;
+  width: auto;
   align-items: center;
 }
 .nav_logo span p{

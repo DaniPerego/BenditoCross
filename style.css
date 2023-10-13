@@ -31,13 +31,16 @@ body {
   animation-name: left-to-right;
   animation-duration: 2s;
   padding-left: 4vw;
-  display: flex;
-  flex-direction: column;
 }
 
 .nav_logo i{
   font-size: 45px;
 }
+.nav_logo span{
+  display: flex;
+  flex-direction: column;
+}
+
 .nav_items a{
   font-weight: bold;
   font-size: 18px;

@@ -1,8 +1,8 @@
 
 :root{
   --color-verde: #b8eed4;
-  --color-azulado: #3f3d56;
-  --color-gris-oscuro: #807a7a;
+  --color-gris: #333;
+  --color-rojo: red;
 }
 
 body {
@@ -16,7 +16,7 @@ body {
 
 /* Barra de Navegación */
 .navbar {
-  background: var(--color-gris-oscuro);
+  background: var(--color-rojo);
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -28,7 +28,7 @@ body {
   /* font-weight: bold; */
   font-size: 30px;
   margin: 15px;
-  color:var(--color-verde) ;
+  color:var(--color-gris) ;
   animation-name: left-to-right;
   animation-duration: 2s;
   padding-left: 4vw;

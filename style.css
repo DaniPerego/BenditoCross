@@ -24,9 +24,9 @@ body {
 }
 
 .nav_logo {
-  font-weight: bold;
+ /*  font-weight: bold;
   font-size: 40px;
-  margin: 15px;
+  */ margin: 15px;
   color:var(--color-verde) ;
   animation-name: left-to-right;
   animation-duration: 2s;

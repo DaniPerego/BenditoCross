@@ -39,6 +39,7 @@ body {
 .nav_logo span{
   display: flex;
   flex-direction: column;
+  width: 5px;
 }
 
 .nav_items a{

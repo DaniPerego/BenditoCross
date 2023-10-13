@@ -39,6 +39,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
  align-items: center;
+ padding-top: 2px;
 }
 .nav_logo span p{
   padding-top: 2px;

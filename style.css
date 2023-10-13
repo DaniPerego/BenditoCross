@@ -23,9 +23,9 @@ body {
   align-items: center;
 }
 
-.nav_logo {/* 
+.nav_logo {
   font-weight: bold;
-  font-size: 40px; */
+  font-size: 40px;
   margin: 15px;
   color:var(--color-verde) ;
   animation-name: left-to-right;
@@ -33,13 +33,13 @@ body {
   padding-left: 4vw;
 }
 
-/* .nav_logo i{
-  font-size: 45px;
-} */
 .nav_logo span{
   display: flex;
   flex-direction: column;
   width: 5px;
+}
+.nav_logo span p{
+  font-size: 20px;
 }
 
 .nav_items a{

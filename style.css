@@ -10,9 +10,6 @@ body {
   margin: 0; 
 }
 
-/*  h1 {
-  font-size: 60px;
-  } */
 
 /* Barra de Navegación */
 .navbar {
@@ -25,9 +22,8 @@ body {
 
 .nav_logo {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  /* font-weight: bold; */
   font-size: 30px;
- /*  margin: 15px; */
+  margin: 15px; 
   color:var(--color-blanco) ;
   animation-name: left-to-right;
   animation-duration: 2s;
@@ -38,13 +34,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
- align-items: center;
- padding-top: 2px;
+  align-items: center;
 }
-.nav_logo span p{
-  padding-top: 2px;
-  font-size: 15px;
-}
+
 
 .nav_items a{
   font-weight: bold;

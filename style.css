@@ -1,6 +1,6 @@
 
 :root{
-  --color-verde: #b8eed4;
+  --color-blanco: #ffffff;
   --color-gris: #333;
   --color-rojo: red;
 }
@@ -16,7 +16,7 @@ body {
 
 /* Barra de Navegación */
 .navbar {
-  background: white;
+  background: var(--color-rojo);
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -28,7 +28,7 @@ body {
   /* font-weight: bold; */
   font-size: 30px;
   margin: 15px;
-  color:var(--color-gris) ;
+  color:var(--color-blanco) ;
   animation-name: left-to-right;
   animation-duration: 2s;
   padding-left: 4vw;
@@ -50,7 +50,7 @@ body {
   font-weight: bold;
   font-size: 18px;
   margin: 15px;
-  color:var(--color-verde) ;
+  color:var(--color-blanco) ;
   text-decoration: none;
   position: relative;
 }

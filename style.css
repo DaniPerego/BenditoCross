@@ -23,7 +23,7 @@ body {
 .nav_logo {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 30px;
-  padding-top: 8px;
+  padding-top: 12px;
   color:var(--color-blanco) ;
   animation-name: left-to-right;
   animation-duration: 2s;

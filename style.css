@@ -36,8 +36,8 @@ body {
  align-items: center;
 }
 .nav_logo span p{
-  padding-top: 2px;
-  font-size: 15px;
+ /*  padding-top: 2px; */ 
+ font-size: 15px;
 }
 
 .nav_items a{

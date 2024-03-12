@@ -13,14 +13,15 @@ body {
 
 /* Barra de Navegación */
 .navbar {
-  background: var(--color-rojo);
+  background-color:rgb(255 0 0 / 0.25);
+  
   height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav_logo {
+/* .nav_logo {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 30px;
   padding-top: 12px;
@@ -28,7 +29,7 @@ body {
   animation-name: left-to-right;
   animation-duration: 2s;
 }
-
+*/
 .nav_logo span{
   display: flex;
   flex-direction: column;
@@ -37,7 +38,7 @@ body {
 }
 .nav_logo span p{
  font-size: 15px;
-}
+} */
 
 .nav_items a{
   font-weight: bold;

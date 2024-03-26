@@ -81,6 +81,17 @@ body {
 .nav_toggle {
   display: none;
 }
+/* SOLAPAS */
+.solapa1 {
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 0; 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.733),rgba(0, 0, 0, 0.733)), url(img/pesas_rusas.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 
 /*section modulos*/
 .modulos {

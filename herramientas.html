@@ -31,10 +31,11 @@
     </header>
     <div class="content">
         <div class="rm-calculator">
-            <h2>Calculadora de RM</h2>
+            
             <div class="calculator">
-                <label for="exercise">Ejercicio:</label>
-                <select id="exercise">
+                <h2>Calculadora de RM</h2>
+                <label for="exercise">Ejercicio:
+                    <select id="exercise">
                     <option value="BSquat">Back Squat</option>
                     <object data="FSquat" type=""></object>
                     <option value="Deadlift">Deadlift</option>
@@ -45,9 +46,12 @@
                     <option value="Burpees">Burpees</option>
                     <option value="Box Jumps">Box Jumps</option>
                     <!-- Agrega más opciones de ejercicios según sea necesario -->
-                </select>
-                <label for="weight">Peso (kg):</label>
-                <input type="number" id="weight">
+                    </select>
+                </label>
+                
+                <label for="weight">Peso (kg):
+                    <input type="number" id="weight">
+                </label>
                 <button id="calculate">Calcular</button>
                 <div id="result"></div>
             </div>
@@ -57,18 +61,6 @@
             <h2>Cronómetro</h2>
             <div class="stopwatch" id="stopwatch">00:00:00.000</div>
             <div class="timer">
-                <!-- <div class="input-group">
-                    <label for="hours">Horas:</label>
-                    <input type="number" id="hours" min="0" max="23">
-                </div>
-                <div class="input-group">
-                    <label for="minutes">Minutos:</label>
-                    <input type="number" id="minutes" min="0" max="59">
-                </div>
-                <div class="input-group">
-                    <label for="seconds">Segundos:</label>
-                    <input type="number" id="seconds" min="0" max="59">
-                </div> -->
                 <button id="start">Iniciar</button>
                 <button id="reset">Reiniciar</button>
             </div>

@@ -124,8 +124,8 @@ body {
 }
 
 #modul4 {
-  background-image: linear-gradient(rgba(255, 0, 0, 0.507),rgba(255, 0, 0, 0.507)) ,url(img/crossfit980-cabecera-facebook-DEF-OK.jpg);
-  background-size:cover;
+  background-image: linear-gradient(rgba(255, 0, 0, 0.507),rgba(255, 0, 0, 0.507)) ,url(img/huguito.jpeg);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;

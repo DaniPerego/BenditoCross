@@ -8,13 +8,26 @@
 body {
   font-family:Arial, Helvetica, sans-serif;
   margin: 0; 
-  background-image: url(img/crossfit-l_0.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.733),rgba(0, 0, 0, 0.733)), url(img/crossfit-l_0.jpg);
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 }
 
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  header {
+   /*  background-color: #000;
+     */text-align: center;/* 
+    padding: 20px; */
+  }
+  
 
 /* Barra de Navegación */
 .navbar {
@@ -69,22 +82,59 @@ body {
   display: none;
 }
 
-
-/* Estilos generales */
-body {
-font-family: Arial, sans-serif;
-  background-color: #000;
-  color: #fff;
+/*section modulos*/
+.modulos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+  padding: 40px 0 0 0;
 }
 
-header {
- /*  background-color: #000;
-   */text-align: center;/* 
-  padding: 20px; */
+.modulos > div {
+  background-color: var(--color-gris);
+  text-align: center;
+  color: var(--color-blanco);
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.Sem;
+  width: 45% ;
+  height: 150px;
+}
+#modul1 {
+  background-image: linear-gradient(rgba(255, 0, 0, 0.507),rgba(255, 0, 0, 0.507)) ,url(img/715560.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+#modul2 {
+  background-image: linear-gradient(rgba(255, 0, 0, 0.507),rgba(255, 0, 0, 0.507)) ,url(img/CrossFit-Sevilla.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+#modul3 {
+  background-image: linear-gradient(rgba(255, 0, 0, 0.507),rgba(255, 0, 0, 0.507)) ,url(img/CrossFit-Sevilla-1.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#modul4 {
+  background-image: linear-gradient(rgba(255, 0, 0, 0.507),rgba(255, 0, 0, 0.507)) ,url(img/crossfit980-cabecera-facebook-DEF-OK.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 
 
+/******************************************/
+/* reloj*/
 .clock-container {
   text-align: center;
   padding: 20px;

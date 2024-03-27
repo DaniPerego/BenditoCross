@@ -1,10 +1,8 @@
-
 :root{
   --color-blanco: #ffffff;
   --color-gris: #333;
   --color-rojo: red;
 }
-
 body {
   font-family: Impact, 'Arial Narrow Bold', sans-serif, Arial, Helvetica, sans-serif;
   margin: 0; 
@@ -14,7 +12,6 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
-
 /* Estilos generales */
 body {
   font-family: Arial, sans-serif;
@@ -28,7 +25,6 @@ body {
   
   }
   
-
 /* Barra de Navegación */
 .navbar {
   height: 60px;
@@ -36,7 +32,6 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
 .nav_logo {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 30px;
@@ -44,7 +39,6 @@ body {
   animation-name: left-to-right;
   animation-duration: 2s;
 }
-
 .nav_logo span{
   display: flex;
   flex-direction: column;
@@ -54,7 +48,6 @@ body {
 .nav_logo span p{
  font-size: 15px;
 }
-
 .nav_items a{
   font-weight: bold;
   font-size: 18px;
@@ -76,7 +69,6 @@ body {
 .nav_items a:hover::before{
   width: 100% !important;
 }
-
 .nav_toggle {
   display: none;
 }
@@ -90,8 +82,6 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
-
-
 /*section modulos*/
 .modulos {
   display: flex;
@@ -100,7 +90,6 @@ body {
   height: 100%;
   padding: 40px 0 0 0;
 }
-
 .modulos > div {
   background-color: var(--color-gris);
   text-align: center;
@@ -132,7 +121,6 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
-
 #modul4 {
   background-image: linear-gradient(rgba(255, 0, 0, 0.507),rgba(255, 0, 0, 0.507)) ,url(img/huguito.jpeg);
   background-size: cover;
@@ -140,45 +128,36 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
-
-
-
 /******************************************/
 /* reloj*/
 .clock-container {
   text-align: center;
   padding: 20px;
 }
-
 .clock {
   font-size: 48px;
   color: red;
   margin-bottom: 20px;
 }
-
 .content {
   display: flex;
   justify-content: space-between;
   padding: 20px;
 }
-
 h2 {
   text-align: center;
   color: red;
   margin-bottom: 20px;
 }
-
 .rm-calculator {
   flex-basis: 45%;
 }
-
 .calculator {
   background-color: #33333396;
   padding: 20px;
   border-radius: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 .calculator label,
 .calculator select,
 .calculator input {
@@ -191,16 +170,13 @@ h2 {
   background-color: #fff;
   color: #333;
 }
-
 .calculator label {
   font-weight: bold;
 }
-
 .calculator input[type="number"]:focus,
 .calculator select:focus {
   outline: none;
 }
-
 .calculator button {
   background-color: red;
   color: #fff;
@@ -211,20 +187,16 @@ h2 {
   transition: background-color 0.3s ease;
   width: 100%;
 }
-
 .calculator button:hover {
   background-color: darkred;
 }
-
 #result {
   margin-top: 10px;
   font-weight: bold;
 }
-
 .stopwatch-container {
   flex-basis: 45%;
 }
-
 .stopwatch,
 .timer {
   background-color: #33333396;
@@ -232,62 +204,52 @@ h2 {
   border-radius: 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 .timer .input-group {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
-
 .timer .input-group label {
   margin-right: 10px;
 }
-
 .timer button {
   margin-top: 10px;
   width: 100%;
 }
-
 /* Estilos para el audio */
 #alarm-sound {
   display: none;
 }
-
 /* Media queries para pantallas de menor tamaño */
 @media screen and (max-width: 768px) {
   .content {
     flex-direction: column;
   }
-
   .rm-calculator,
   .stopwatch-container {
     margin-bottom: 20px;
   }
-
   .calculator,
   .stopwatch,
   .timer {
     padding: 10px;
   }
-
   .clock {
     font-size: 24px;
     margin-bottom: 10px;
   }
-
   .rm-calculator,
   .stopwatch-container {
     flex-basis: 100%;
   }
 }
-
 /* Estilos para pantallas pequeñas (hasta 768px) */
 @media (max-width: 768px) {
   .nav_items {
     position: absolute;
     left: 0;
     top: 60px;
-    background-color: #333333e0;
+    background-color: #333333c7;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -323,8 +285,6 @@ h2 {
     transform: rotate(-45deg) translate(-5px, 1px);
   }
   .open {transform: translateX(0) !important;}
-
-
   /* Ajustar el tamaño de la fuente */
   h1 {
     font-size: 2rem;
@@ -341,15 +301,14 @@ h2 {
     padding: 0.5rem 1rem;
   }
 }
-
 /* FOOTER */
-
 .footer-distributed{
 	background:var(--color-azulado);
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
+	font: bold 16px sans-serif;
 	font: impact bold 16px sans-serif;
 	padding: 55px 50px;
 }
@@ -360,33 +319,25 @@ h2 {
 	display: inline-block;
 	vertical-align: top;
 }
-
 /* Footer left */
-
 .footer-distributed .footer-left{
 	width: 40%;
 }
-
 /* The company logo */
-
 .footer-distributed h3{
 	color:  #ffffff;
 	font: normal 36px 'Open Sans', cursive;
 	margin: 0;
 }
-
 .footer-distributed h3 span{
 	color: var(--color-verde);
 }
-
 /* Footer links */
-
 .footer-distributed .footer-links{
 	color:  #ffffff;
 	margin: 20px 0 12px;
 	padding: 0;
 }
-
 .footer-distributed .footer-links a{
 	display:inline-block;
 	line-height: 1.8;
@@ -394,20 +345,16 @@ h2 {
 	text-decoration: none;
 	color:  inherit;
 }
-
 .footer-distributed .footer-company-name{
 	color:  var(--color-verde);
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
 }
-
 /* Footer Center */
-
  .footer-center{
 	width: 35%;
 }
-
  .footer-center i{
 	background-color:  #33383b;
 	color: #ffffff;
@@ -420,12 +367,10 @@ h2 {
 	margin: 10px 15px;
 	vertical-align: middle;
 }
-
 .footer-center i.fa-envelope{
 	font-size: 17px;
 	line-height: 38px;
 }
-
 .footer-center p{
 	display: inline-block;
 	color: #ffffff;
@@ -433,19 +378,16 @@ h2 {
 	vertical-align: middle;
 	margin:0;
 }
-
 .footer-center p span{
 	display:block;
 	font-weight: normal;
 	font-size:14px;
 	line-height:2;
 }
-
 .footer-center p a{
 	color:  var(--color-verde);
 	text-decoration: none;;
 }
-
 .footer-links a:before {
   content: "|";
   font-weight:300;
@@ -455,17 +397,13 @@ h2 {
   display: inline-block;
   padding-right: 5px;
 }
-
 .footer-links .link-1:before {
   content: none;
 }
-
 /* Footer Right */
-
 .footer-distributed .footer-right{
 	width: 20%;
 }
-
 .footer-distributed .footer-company-about{
 	line-height: 20px;
 	color:  white;
@@ -473,7 +411,6 @@ h2 {
 	font-weight: normal;
 	margin: 0;
 }
-
 .footer-distributed .footer-company-about span{
 	display: block;
 	color:  #ffffff;
@@ -488,11 +425,9 @@ h2 {
 .footer-redes span {
   color: var(--color-verde);
 }
-
 .footer-distributed .footer-icons{
 	margin-top: 25px;
 }
-
 .footer-distributed .footer-icons a{
 	display: inline-block;
 	width: 35px;
@@ -500,12 +435,10 @@ h2 {
 	cursor: pointer;
 	background-color: var(--color-azulado);
 	border-radius: 2px;
-
 	font-size: 20px;
 	color: #ffffff;
 	text-align: center;
 	line-height: 35px;
-
 	margin-right: 3px;
 	margin-bottom: 5px;
 }

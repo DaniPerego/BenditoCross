@@ -87,20 +87,23 @@ body {
 .modulos {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 30px;
-  border-radius: 3px;
+  
   display: grid;
   grid-template-columns: minmax(100px, 1fr) 1fr;
-  grid-template-rows: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 4px;
+  margin: 4px;
 }
-/* .modulos > div {
+.modulos > div {
+  border-radius: 4px;
+  /*
   background-color: var(--color-gris);
   text-align: center;
   color: var(--color-blanco);
- 
-} */
+ */
+} 
 #modul1 {
-  grid-row: 1 / 3;
+  grid-row: 1 / 5;
   background-image: linear-gradient(rgba(255, 0, 0, 0.507),rgba(255, 0, 0, 0.507)) ,url(img/715560.jpg);
   background-size:cover;
   background-repeat: no-repeat;
@@ -108,6 +111,8 @@ body {
   background-attachment: fixed;
 }
 #modul2 {
+  grid-row: 1 / 4;
+
   background-image: linear-gradient(rgba(255, 0, 0, 0.507),rgba(255, 0, 0, 0.507)) ,url(img/CrossFit-Sevilla.jpg);
   background-size:cover;
   background-repeat: no-repeat;
@@ -115,6 +120,7 @@ body {
   background-attachment: fixed;
 }
 #modul3 {
+  grid-row: 4 / 5;
   background-image: linear-gradient(rgba(255, 0, 0, 0.507),rgba(255, 0, 0, 0.507)) ,url(img/CrossFit-Sevilla-1.jpg);
   background-size:cover;
   background-repeat: no-repeat;
@@ -123,6 +129,7 @@ body {
 }
 #modul4 {
   grid-column: 1 / 3;
+  grid-row: 5 / 8;
   background-image: linear-gradient(rgba(255, 0, 0, 0.507),rgba(255, 0, 0, 0.507)) ,url(img/huguito.jpeg);
   background-size: cover;
   background-repeat: no-repeat;

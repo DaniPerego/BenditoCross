@@ -1,8 +1,7 @@
 /* Estilos generales */
  a {
   text-decoration: none;
-  color: var(--color-blanco);
-  
+  color: var(--color-blanco); 
  } 
   
 :root{
@@ -11,6 +10,7 @@
   --color-gris: #333;
   --color-rojo: red;
 }
+
 body {
   font-family: Impact, 'Arial Narrow Bold', sans-serif, Arial, Helvetica, sans-serif;
   margin: 0; 
@@ -23,9 +23,8 @@ body {
 
 header {
     text-align: center;
-    padding: 5% 10%;
-  
-  }
+    padding: 5% 10%; 
+}
   
 /* Barra de Navegación */
 .navbar {
@@ -48,7 +47,8 @@ header {
   align-items: center;
 }
 .nav_logo span p{
- font-size: 15px;
+ font-size: 20px;
+ margin-top: auto;
 }
 .nav_items a{
   font-size: 18px;
@@ -96,7 +96,7 @@ header {
 .modulos > div {
   border-radius: 4px;
   color: var(--color-rojo);
- 
+  place-content: center;
 } 
 #modul1 {
   grid-row: 1 / 5;
@@ -105,6 +105,7 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  
 }
 #modul2 {
   grid-row: 1 / 4;

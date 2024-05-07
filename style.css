@@ -25,6 +25,13 @@ header {
     text-align: center;
     padding: 5% 10%; 
 }
+
+h2 {
+  font-family: Impact, 'Arial Narrow Bold', sans-serif, Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: red;
+  margin-bottom: 20px;
+}
   
 /* Barra de Navegación */
 .navbar {
@@ -105,11 +112,14 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  
+}
+#modul1:hover{
+  background-color: rgba(255, 0, 0, 0.507) ;
+  transform: scale(1.2);
+
 }
 #modul2 {
   grid-row: 1 / 4;
-
   background-image: linear-gradient(rgba(255, 0, 0, 0.507),rgba(255, 0, 0, 0.507)) ,url(img/CrossFit-Sevilla.jpg);
   background-size:cover;
   background-repeat: no-repeat;
@@ -149,11 +159,10 @@ header {
   justify-content: space-between;
   padding: 20px;
 }
-h2 {
-  text-align: center;
-  color: red;
-  margin-bottom: 20px;
-}
+
+/***************************************/
+/*calculadora RM*/
+
 .rm-calculator {
   flex-basis: 45%;
 }

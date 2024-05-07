@@ -1,8 +1,5 @@
 /* Estilos generales */
- a {
-  text-decoration: none;
-  color: var(--color-blanco); 
- } 
+
   
 :root{
   color-scheme: dark light;
@@ -32,6 +29,15 @@ h2 {
   color: red;
   margin-bottom: 20px;
 }
+
+a {
+  text-decoration: none;
+  color: var(--color-blanco); 
+ } 
+
+ p {
+  color: var(--color-blanco);
+ }
   
 /* Barra de Navegación */
 .navbar {

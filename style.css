@@ -1,14 +1,4 @@
 /* Estilos generales */
-<<<<<<< HEAD
-a {
-  text-decoration: none;
-  color: var(--color-blanco);
-}
-
-:root {
-=======
-
-  
 :root{
 >>>>>>> f2e21cd9d9d6dd10e907a6d9c792dd9f8a31dadd
   color-scheme: dark light;
@@ -32,6 +22,14 @@ header {
   padding: 5% 10%;
 }
 
+a {
+  text-decoration: none;
+  color: var(--color-blanco);
+}
+p {
+  color: var(--color-blanco);
+ }
+
 h2 {
   font-family: Impact, 'Arial Narrow Bold', sans-serif, Arial, Helvetica, sans-serif;
   text-align: center;
@@ -39,18 +37,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-<<<<<<< HEAD
-=======
-a {
-  text-decoration: none;
-  color: var(--color-blanco); 
- } 
-
- p {
-  color: var(--color-blanco);
- }
-  
->>>>>>> f2e21cd9d9d6dd10e907a6d9c792dd9f8a31dadd
 /* Barra de Navegación */
 .navbar {
   height: 60px;

@@ -1,7 +1,6 @@
 /* Estilos generales */
 :root{
->>>>>>> f2e21cd9d9d6dd10e907a6d9c792dd9f8a31dadd
-  color-scheme: dark light;
+  --color-scheme: dark light;
   --color-blanco: #ffffff;
   --color-gris: #333;
   --color-rojo: red;
@@ -129,11 +128,13 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  transition-duration: 2s;
 }
 
-/* #modul1 :hover{
+ #modul1:hover{
+  scale: 1.025;
 }
- */
+ 
 #modul2 {
   grid-row: 1 / 4;
   background-image: linear-gradient(rgba(255, 0, 0, 0.507), rgba(255, 0, 0, 0.507)), url(img/CrossFit-Sevilla.jpg);

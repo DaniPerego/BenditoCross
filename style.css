@@ -60,6 +60,7 @@ h2 {
 
 .nav_logo :hover{
   scale: 1.2;
+  color: var(--color-rojo);
 }
 
 .nav_logo span p {

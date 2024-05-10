@@ -115,14 +115,11 @@ h2 {
 
 .modulos>div {
   border-radius: 4px;
-  color: var(--color-rojo);
   place-content: center;
 }
 
 #modul1 {
   grid-row: 1 / 5;
-  background-color: #33333359;
-  transition: background-color 0.5s;
   background-image: url(img/715560.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -131,13 +128,13 @@ h2 {
   transition-duration: 2s;
 }
 
- #modul1:hover{
-  scale: 1.025;
+ #modul1 :hover{
+  color: var(--color-rojo);
 }
  
 #modul2 {
   grid-row: 1 / 4;
-  background-image: linear-gradient(rgba(255, 0, 0, 0.507), rgba(255, 0, 0, 0.507)), url(img/CrossFit-Sevilla.jpg);
+  background-image: url(img/CrossFit-Sevilla.jpg);
   transition: background-color 0.5s;
   background-size: cover;
   background-repeat: no-repeat;
@@ -147,7 +144,7 @@ h2 {
 
 #modul3 {
   grid-row: 4 / 5;
-  background-image: linear-gradient(rgba(255, 0, 0, 0.507), rgba(255, 0, 0, 0.507)), url(img/CrossFit-Sevilla-1.jpg);
+  background-image: url(img/CrossFit-Sevilla-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -157,7 +154,7 @@ h2 {
 #modul4 {
   grid-column: 1 / 3;
   grid-row: 5 / 8;
-  background-image: linear-gradient(rgba(255, 0, 0, 0.507), rgba(255, 0, 0, 0.507)), url(img/huguito.jpeg);
+  background-image: url(img/huguito.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -169,12 +166,16 @@ h2 {
 .clock-container {
   text-align: center;
   padding: 20px;
+  width: 200px;
+  height: 100px;
 }
 
 .clock {
   font-size: 48px;
-  color: red;
+  color: var(--color-blanco);
   margin-bottom: 20px;
+  background-color: var(--color-rojo);
+  border-radius: 4px;
 }
 
 .content {
@@ -191,10 +192,10 @@ h2 {
 }
 
 .calculator {
-  background-color: #33333396;
+  background-color: #3333334b;
   padding: 20px;
-  border-radius: 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  color: #fff;
 }
 
 .calculator label,
@@ -205,7 +206,7 @@ h2 {
   width: 100%;
   /* padding: 10px; */
   border: none;
-  border-radius: 0;
+  border-radius: 4px;
   background-color: #fff;
   color: #333;
 }
@@ -224,19 +225,18 @@ h2 {
   color: #fff;
   border: none;
   padding: 10px 20px;
-  border-radius: 0;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
   width: 100%;
 }
 
 .calculator button:hover {
-  background-color: darkred;
+  background-color: red,
 }
 
 #result {
   margin-top: 10px;
-  font-weight: bold;
+  
 }
 
 .stopwatch-container {

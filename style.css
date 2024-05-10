@@ -51,12 +51,15 @@ h2 {
   animation-name: left-to-right;
   animation-duration: 2s;
 }
-
 .nav_logo span {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+
+.nav_logo :hover{
+  scale: 1.2;
 }
 
 .nav_logo span p {
@@ -117,6 +120,10 @@ h2 {
   border-radius: 4px;
   place-content: center;
 }
+.modulos>div :hover{
+  color: var(--color-rojo);
+  scale: 1.5;
+}
 
 #modul1 {
   grid-row: 1 / 5;
@@ -126,10 +133,6 @@ h2 {
   background-position: center;
   background-attachment: fixed;
   transition-duration: 2s;
-}
-
- #modul1 :hover{
-  color: var(--color-rojo);
 }
  
 #modul2 {

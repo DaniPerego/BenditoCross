@@ -698,9 +698,9 @@ img:nth-child(2) {
 img:nth-child(3) {
   animation-delay: 4s;
 }
-img:nth-child(4) {
+/* img:nth-child(4) {
   animation-delay: 6s;
 }
 img:nth-child(5) {
   animation-delay: 8s;
-}
+} */

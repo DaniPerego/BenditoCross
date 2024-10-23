@@ -84,4 +84,3 @@ document.addEventListener('DOMContentLoaded', () => {
     return value.toString().padStart(length, '0');
   }
 });
-

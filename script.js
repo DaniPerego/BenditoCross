@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const navToggle = document.getElementById('nav_toggle');
-  const navItems = document.getElementById('nav_items');
+  const _toggle = document.getElementById('_toggle');
+  const _items = document.getElementById('_items');
   const clockElement = document.getElementById('clock');
   const weightInput = document.getElementById('weight');
   const exerciseSelect = document.getElementById('exercise');
@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const resetButton = document.getElementById('reset');
 
   // ANIMACIÓN BARRA DE NAVEGACIÓN
-  navToggle.onclick = () => {
-    navItems.classList.toggle('open');
-    navToggle.classList.toggle('close');
+  _toggle.onclick = () => {
+    _items.classList.toggle('open');
+    _toggle.classList.toggle('close');
   };
 
   // Reloj
@@ -24,10 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Calculadora de RM
-  if (calculateButton) {
-    calculateButton.addEventListener('click', calculateRM);
-  }
-  
+  calculateButton.addEventListener('click', calculateRM);
   function calculateRM() {
     const weight = parseFloat(weightInput.value);
     const selectedExercise = exerciseSelect.value;
@@ -48,13 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Cronómetro y Temporizador
   let stopwatchInterval;
   let stopwatchTime = 0;
-  if (startButton) {
-    startButton.addEventListener('click', startStopwatch);
-  }
-  
-  if (resetButton) {
-    resetButton.addEventListener('click', resetStopwatch);
-  }
+  startButton.addEventListener('click', startStopwatch);
+  resetButton.addEventListener('click', resetStopwatch);
 
   function startStopwatch() {
     if (!stopwatchInterval) {

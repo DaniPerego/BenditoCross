@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const startButton = document.getElementById('start');
   const resetButton = document.getElementById('reset');
 
-  // ANIMACIÓN BARRA DE NAVEGACIÓN
+  // ANIMACION BARRA DE NAVEGACIÓN
   _toggle.onclick = () => {
     _items.classList.toggle('open');
     _toggle.classList.toggle('close');

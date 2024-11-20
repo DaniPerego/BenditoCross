@@ -503,3 +503,28 @@ h2 {
 #pic:nth-child(5) {
   animation-delay: 8s;
 }
+
+
+/* videos */ 
+
+
+.video {
+  width: 50%;
+  position: relative;
+}
+
+.video::after {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.esdacode_video {
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top: 0;
+  left: 0;
+}
+

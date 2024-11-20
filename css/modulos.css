@@ -24,10 +24,7 @@
     border-radius: 4px;
     place-content: center;
   }
-  /* .modulos>div :hover{
-    color: var(--color-rojo);
-    scale: 1.5;
-  } */
+ 
   
   #modul1 {
     grid-row: 1 / 5;

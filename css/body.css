@@ -1,0 +1,99 @@
+/* Estilos generales */
+:root{
+    --color-scheme: dark light;
+    --color-blanco: #ffffff;
+    --color-gris: #333;
+    --color-rojo: red;
+  }
+  
+  body {
+    font-family: Impact, 'Arial Narrow Bold', sans-serif, Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)), url(img/crossfit-l_0.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  header {
+    text-align: center;
+    padding: 5% 10%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--color-blanco);
+  }
+  p {
+    color: var(--color-blanco);
+   }
+  
+  h2 {
+    font-family: Impact, 'Arial Narrow Bold', sans-serif, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: red;
+    margin-bottom: 20px;
+  }
+  
+  /* Barra de Navegación */
+  .navbar {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav_logo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: var(--color-blanco);
+    animation-name: left-to-right;
+    animation-duration: 2s;
+  }
+  .nav_logo span {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .nav_logo :hover{
+    scale: 1.2;
+    color: var(--color-rojo);
+  }
+  
+  .nav_logo span p {
+    font-size: 20px;
+    margin-top: auto;
+  }
+  
+  .nav_items a {
+    font-size: 18px;
+    margin: 15px;
+    color: var(--color-blanco);
+    text-decoration: none;
+    position: relative;
+  }
+  #_items :hover{
+    color: var(--color-rojo);
+  }
+  
+  .nav_items a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-gris);
+    transition: all 0.5s;
+  }
+  
+  .nav_items a:hover::before {
+    width: 100% !important;
+  }
+  
+  .nav_toggle {
+    display: none;
+  }

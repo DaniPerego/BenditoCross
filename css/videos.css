@@ -23,7 +23,7 @@
     font-size: 30px;
     text-align: center;
     display: grid;
-    grid-template-columns: min(100px, 1fr) 1fr 1fr 1fr 1f ;/* 
+    grid-template-columns: 1fr 1fr 1fr 1f ;/* 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
     gap: 4px;
     margin: 4px; 

@@ -18,4 +18,48 @@
     left: 0;
   }
   
+  .modulos {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 4px;
+    margin: 4px;
+  }
   
+  .modulos>div {
+    border-radius: 4px;
+    place-content: center;
+  }
+ 
+  
+  #video1 {
+    grid-row: 1 / 5;
+    background-image: url(../img/715560.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    transition-duration: 2s;
+  }
+   
+  #video2 {
+    grid-row: 1 / 4;
+    background-image: url(../img/CrossFit-Sevilla.jpg);
+    transition: background-color 0.5s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  #video3 {
+    grid-row: 4 / 5;
+    background-image: url(../img/CrossFit-Sevilla-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }

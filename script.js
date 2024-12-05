@@ -43,7 +43,7 @@ lement.textContent = now.toLocaleTimeString('es-ES');
   }
 
   // Calculadora de RM
-  calculateButton.addEventListener('click', calculateRM);
+  ,calculateButton.addEventListener('click', calculateRM))
   function calculateRM() {
     const weight = parseFloat(weightInput.value);
     const selectedExercise = exerciseSelect.value;
@@ -102,4 +102,3 @@ lement.textContent = now.toLocaleTimeString('es-ES');
   function padTime(value, length = 2) {
     return value.toString().padStart(length, '0');
   }
-});

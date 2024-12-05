@@ -16,34 +16,15 @@ document.addEventListener('DOMContentLoaded', () => {
     _toggle.classList.toggle('close');
   };
 
-  document.addEventListener('DOMContentLoaded', function() {
-    // Agregar efecto hover en los enlaces de navegación
-    const navLinks = document.querySelectorAll('.nav_items a');
-    navLinks.forEach(link => {
-        link.addEventListener('mouseenter', () => {
-            link.style.color = '#ff5733';  // Cambiar color al pasar el mouse
-        });
-        link.addEventListener('mouseleave', () => {
-            link.style.color = '';  // Restaurar color original
-        });
-    });
-
-    // Actualización del reloj
-    function updateClock() {
-        const now = new Date();
-        const hours = String(now.getHours()).padStart(2, '0');
-        const minutes = String(now.getMinutes()).padStart(2, '0');
-        const seconds = String(now.getSeconds()).padStart(2, '0');
-        document.getElementById('clock').innerText = `${hours}:${minutes}:${seconds}`;
-    }
-    setInterval(updateClock, 1000);
-});
-
-lement.textContent = now.toLocaleTimeString('es-ES');
+  // Reloj
+  setInterval(updateClock, 1000);
+  function updateClock() {
+    const now = new Date();
+    clockElement.textContent = now.toLocaleTimeString('es-ES');
   }
 
   // Calculadora de RM
-  ,calculateButton.addEventListener('click', calculateRM))
+  calculateButton.addEventListener('click', calculateRM);
   function calculateRM() {
     const weight = parseFloat(weightInput.value);
     const selectedExercise = exerciseSelect.value;
@@ -102,3 +83,4 @@ lement.textContent = now.toLocaleTimeString('es-ES');
   function padTime(value, length = 2) {
     return value.toString().padStart(length, '0');
   }
+});

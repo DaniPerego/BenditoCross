@@ -32,13 +32,13 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    transition-duration: 2s;
+    /* transition-duration: 2s; */
   }
    
   #modul2 {
     grid-row: 1 / 4;
-    background-image: url(../img/CrossFit-Sevilla.jpg);
-    transition: background-color 0.5s;
+    background-image: url(../img/CrossFit-Sevilla.jpg);/* 
+    transition: background-color 0.5s; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

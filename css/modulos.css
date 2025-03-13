@@ -24,23 +24,25 @@
     place-content: center;
   }
  
+  
   #modul1 {
     grid-row: 1 / 4;
-    background-image: url(../img/ayudatrainig.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-  }
-  
-  #modul2 {
-    grid-row: 1 / 5;
     background-image: url(../img/715560.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     /* transition-duration: 2s; */
+  }
+   
+  #modul2 {
+    grid-row: 1 / 5;
+    background-image: url(../img/ayudatrainig.png);/* 
+    transition: background-color 0.5s; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
   }
   
   #modul3 {

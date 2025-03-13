@@ -34,7 +34,7 @@
  
   #modul1 {
     grid-row: 1 / 4;
-    background-color: rgba(0, 0, 0, 0.5); /* Color negro translúcido */
+    background-color: rgba(0, 0, 0, 0.25); /* Color negro translúcido */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

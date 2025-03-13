@@ -25,7 +25,7 @@
     border-radius: 4px;
     place-content: center;
   }
-  .modulos>div>p {
+  p {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
     color: red;

@@ -37,7 +37,7 @@
    
   #modul2 {
     grid-row: 1 / 4;
-    background-image: url(../img/CrossFit-Sevilla.jpg);/* 
+    background-image: url(../img/pesas_rusas.jpg);/* 
     transition: background-color 0.5s; */
     background-size: cover;
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@
   
   #modul3 {
     grid-row: 4 / 5;
-    background-image: url(../img/CrossFit-Sevilla-1.jpg);
+    background-image: url(../img/CrossFit-Sevilla.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

@@ -37,7 +37,7 @@
    
   #modul2 {
     grid-row: 1 / 4;
-    background-image: url(../img/pesas_rusas.jpg);/* 
+    background-image: url(../img/%RM.png);/* 
     transition: background-color 0.5s; */
     background-size: cover;
     background-repeat: no-repeat;

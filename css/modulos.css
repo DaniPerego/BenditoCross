@@ -34,7 +34,7 @@
  
   #modul1 {
     grid-row: 1 / 4;
-    background-color: rgba(92, 90, 90, 0.25); /* Color negro translúcido */
+    background-color: rgba(255, 0, 0, 0.25); /* Color negro translúcido */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -44,7 +44,7 @@
    
   #modul2 {
     grid-row: 1 / 5;
-    background-color: rgba(0, 0, 0, 0.5);; /* Color rojo translúcido */
+    background-color: rgba(255, 0, 0, 0.25); /* Color rojo translúcido */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -53,7 +53,7 @@
   
   #modul3 {
     grid-row: 4 / 5;
-    background-color: rgba(0, 0, 0, 0.5);; /* Color verde translúcido */
+    background-color: rgba(255, 0, 0, 0.25); /* Color verde translúcido */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -63,7 +63,7 @@
   #modul4 {
     grid-column: 1 / 3;
     grid-row: 5 / 8;
-    background-color: rgba(0, 0, 0, 0.5);; /* Color azul translúcido */
+    background-color:rgba(255, 0, 0, 0.25); /* Color azul translúcido */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -91,7 +91,7 @@
   #horario1 {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
-    background-color: rgba(0, 0, 0, 0.5); /* Color negro translúcido */
+    background-color: rgba(255, 0, 0, 0.25); /* Color negro translúcido */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -113,7 +113,7 @@
   #horario3 {
     grid-column: 1 / 3;
     grid-row: 6 / 9;
-    background-color: rgba(0, 255, 0, 0.5); /* Color verde translúcido */
+    background-color: rgba(255, 0, 0, 0.25); /* Color verde translúcido */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

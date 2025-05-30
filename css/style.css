@@ -68,6 +68,307 @@
     }
 }
 
+/* Reloj */
+.clock-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.clock {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--color-blanco);
+    text-align: center;
+}
+
+/* Estilos para la sección de herramientas */
+.tools-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tools-section h1 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--color-blanco);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tools-grid {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(300px, auto);
+    gap: 2rem;
+    margin: 2rem auto;
+    width: calc(100% - 4rem);
+    max-width: 1200px;
+}
+
+.tool-card {
+    background: rgba(73, 73, 73, 0.5);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    background: rgba(73, 73, 73, 0.7);
+}
+
+.tool-card i {
+    font-size: 3rem;
+    color: var(--color-rojo);
+    margin-bottom: 1rem;
+}
+
+.tool-card h2 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--color-blanco);
+    margin: 0;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    padding: 10px;
+}
+
+.tool-card p {
+    font-family: var(--font-body);
+    color: rgb(255, 252, 252);
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.2;
+    padding: 10px;
+}
+
+.tool-button {
+    display: inline-block;
+    background-color: var(--color-rojo);
+    color: var(--color-blanco);
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.tool-button:hover {
+    background-color: #cc0000;
+    transform: translateY(-2px);
+}
+
+/* Ajustes específicos para cada tarjeta */
+.tool-card:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.tool-card:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.tool-card:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.tool-card:nth-child(4) {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+/* Ajustes responsivos para herramientas */
+@media (max-width: 768px) {
+    .tools-section h1 {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .tools-grid {
+        font-size: 20px;
+    }
+
+    .tool-card h2 {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .tool-card p {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tool-card {
+        padding: 8px;
+    }
+
+    .tool-card i {
+        font-size: 2.5rem;
+    }
+
+    .tool-button {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Barra de Navegación */
+.navbar {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background: rgba(51, 51, 51, 0.9);
+}
+
+.nav_logo {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--color-blanco);
+    animation-name: left-to-right;
+    animation-duration: 2s;
+}
+
+.nav_logo span {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav_logo :hover {
+    scale: 1.2;
+    color: var(--color-rojo);
+}
+
+.nav_logo span p {
+    font-size: 20px;
+    margin-top: auto;
+}
+
+.nav_items a {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 16px;
+    margin: 15px;
+    color: var(--color-blanco);
+    text-decoration: none;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+.nav_items a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-rojo);
+    transition: all 0.5s;
+}
+
+.nav_items a:hover::before {
+    width: 100% !important;
+}
+
+.nav_toggle {
+    display: none;
+}
+
+/* Estilos para pantallas pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    .nav_items {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: rgba(51, 51, 51, 0.95);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        transform: translateX(-100%);
+        transition: 0.3s ease all;
+        z-index: 100;
+    }
+
+    .nav_items a {
+        text-align: center;
+        padding: 20px;
+        margin: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav_toggle {
+        display: flex !important;
+        flex-direction: column;
+        margin: 15px;
+        cursor: pointer;
+    }
+
+    .nav_toggle span {
+        width: 30px;
+        height: 4px;
+        background: var(--color-blanco);
+        margin-bottom: 5px;
+        border-radius: 2px;
+        transform-origin: 5px 0px;
+        transition: all 0.2s linear;
+    }
+
+    .close span {
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+
+    .close span:nth-child(2) {
+        display: none;
+    }
+
+    .close span:nth-child(3) {
+        transform: rotate(-45deg) translate(-5px, 1px);
+    }
+
+    .open {
+        transform: translateX(0) !important;
+    }
+}
+
+/* Eliminar los estilos del header simple que ya no necesitamos */
+.simple-header {
+    display: none;
+}
+
+
 
 
 

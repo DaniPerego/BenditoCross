@@ -3,10 +3,12 @@
     --color-blanco: #ffffff;
     --color-gris: #333;
     --color-rojo: red;
-  }
-  
-  body {
-    font-family: Impact, 'Arial Narrow Bold', sans-serif, Arial, Helvetica, sans-serif;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
     margin: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)), 
     url(../img/crossfit-l_0.jpg);
@@ -14,72 +16,84 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-  }
-  
-  header {
+}
+
+/* Agregamos las fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
+
+header {
     text-align: center;
     padding: 5% 10%;
-  }
-  
-  a {
+}
+
+a {
     text-decoration: none;
     color: var(--color-blanco);
-  }
-  p {
+}
+p {
     color: var(--color-blanco);
-   }
-  
-  h2 {
-    font-family: Impact, 'Arial Narrow Bold', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-weight: 700;
     text-align: center;
     color: red;
     margin-bottom: 20px;
-  }
-  
-  /* Barra de Navegación */
-  .navbar {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Barra de Navegación */
+.navbar {
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .nav_logo {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav_logo {
+    font-family: var(--font-heading);
+    font-weight: 700;
     font-size: 30px;
     color: var(--color-blanco);
     animation-name: left-to-right;
     animation-duration: 2s;
-  }
-  .nav_logo span {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.nav_logo span {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-  }
-  
-  .nav_logo :hover{
+}
+
+.nav_logo :hover{
     scale: 1.2;
     color: var(--color-rojo);
-  }
-  
-  .nav_logo span p {
+}
+
+.nav_logo span p {
     font-size: 20px;
     margin-top: auto;
-  }
-  
-  .nav_items a {
-    font-size: 18px;
+}
+
+.nav_items a {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 16px;
     margin: 15px;
     color: var(--color-blanco);
     text-decoration: none;
     position: relative;
-  }
-  #_items :hover{
+    letter-spacing: 0.5px;
+}
+#_items :hover{
     color: var(--color-rojo);
-  }
-  
-  .nav_items a::before {
+}
+
+.nav_items a::before {
     content: "";
     position: absolute;
     left: 0;
@@ -88,154 +102,154 @@
     height: 2px;
     background: var(--color-gris);
     transition: all 0.5s; 
-  }
-  
-  .nav_items a:hover::before {
+}
+
+.nav_items a:hover::before {
     width: 100% !important;
-  }
-  
-  .nav_toggle {
+}
+
+.nav_toggle {
     display: none;
-  }
+}
 
 /* Estilos para pantallas pequeñas (hasta 768px) */
 @media (max-width: 768px) {
     .nav_items {
-      position: absolute;
-      left: 0;
-      top: 60px;
-      background-color: #333333c7;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: auto;
-      transform: translateX(-100%);
-      transition: 0.3s ease all;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        background-color: #333333c7;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        transform: translateX(-100%);
+        transition: 0.3s ease all;
     }
-  
+
     .nav_items a {
-      text-align: center;
-      color: var(--color-blanco);
+        text-align: center;
+        color: var(--color-blanco);
     }
-  
+
     .nav_toggle {
-      display: flex !important;
-      flex-direction: column;
-      margin: 15px;
+        display: flex !important;
+        flex-direction: column;
+        margin: 15px;
     }
-  
+
     .nav_toggle span {
-      width: 30px;
-      height: 4px;
-      background: var(--color-blanco);
-      margin-bottom: 5px;
-      border-radius: 2px;
-      transform-origin: 5px 0px;
-      transition: 0.2s linear;
+        width: 30px;
+        height: 4px;
+        background: var(--color-blanco);
+        margin-bottom: 5px;
+        border-radius: 2px;
+        transform-origin: 5px 0px;
+        transition: 0.2s linear;
     }
-  
+
     .close span {
-      transform: rotate(45deg) translate(0px, 0px);
+        transform: rotate(45deg) translate(0px, 0px);
     }
-  
+
     .close span:nth-child(2) {
-      display: none;
+        display: none;
     }
-  
+
     .close span:nth-child(3) {
-      transform: rotate(-45deg) translate(-5px, 1px);
+        transform: rotate(-45deg) translate(-5px, 1px);
     }
-  
+
     .open {
-      transform: translateX(0) !important;
+        transform: translateX(0) !important;
     }
-  
+
     /* Ajustar el tamaño de la fuente */
     h1 {
-      font-size: 2rem;
+        font-size: 2rem;
     }
-  
+
     label {
-      font-size: 1.2rem;
+        font-size: 1.2rem;
     }
-  
+
     input[type="text"],
     input[type="number"] {
-      font-size: 1.2rem;
-      width: 80%;
+        font-size: 1.2rem;
+        width: 80%;
     }
-  
+
     button {
-      font-size: 1.2rem;
-      padding: 0.5rem 1rem;
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
     }
-  }
-  
-  
-  @keyframes left-to-right {
+}
+
+
+@keyframes left-to-right {
     0% {
-      transform: translateX(-500px);
-      opacity: 0;
+        transform: translateX(-500px);
+        opacity: 0;
     }
-  
+
     100% {
-      transform: translateX(0px);
-      opacity: 1;
+        transform: translateX(0px);
+        opacity: 1;
     }
-  }
+}
 
 /* Estilos para el footer */
 .footer-distributed {
-  background-color: #292c2f;
-  color: white;
-  text-align: left;
-  padding: 50px 50px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+    background-color: #292c2f;
+    color: white;
+    text-align: left;
+    padding: 50px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .footer-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .footer-left, .footer-center, .footer-right {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-left h3 {
-  margin: 0;
-  font-size: 24px;
-  font-weight: bold;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .footer-links a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
 .footer-company-name {
-  margin-top: 10px;
-  font-size: 14px;
+    margin-top: 10px;
+    font-size: 14px;
 }
 
 .footer-center i {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .footer-company-about {
-  margin-top: 20px;
-  font-size: 14px;
+    margin-top: 20px;
+    font-size: 14px;
 }
 
 .footer-icons a {
-  color: white;
-  margin-right: 10px;
-  font-size: 20px;
+    color: white;
+    margin-right: 10px;
+    font-size: 20px;
 }
   
 /* carrusel */

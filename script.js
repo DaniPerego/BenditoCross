@@ -6,9 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const exerciseSelect = document.getElementById('exercise');
   const calculateButton = document.getElementById('calculate');
   const resultElement = document.getElementById('result');
+
+  // Cronómetro
   const stopwatchElement = document.getElementById('stopwatch');
   const startButton = document.getElementById('start');
   const resetButton = document.getElementById('reset');
+
+  let interval;
+  let milliseconds = 0;
 
   // ANIMACION BARRA DE NAVEGACIÓN
   _toggle.onclick = () => {
@@ -32,55 +37,42 @@ document.addEventListener('DOMContentLoaded', () => {
       let percentages = '';
       let percentage = 95;
       while (percentage >= 30) {
-        const rm = weight * (percentage / 100);
-        percentages += `${percentage}%: ${rm.toFixed(2)}kg<br>`;
+        percentages += `${percentage}%: ${weight * (percentage / 100)} kg\n`;
         percentage -= 5;
       }
-      resultElement.innerHTML = `Porcentajes de RM para ${selectedExercise}:<br>${percentages}`;
+      resultElement.textContent = percentages;
     } else {
-      resultElement.textContent = 'Por favor, ingresa el peso y selecciona un ejercicio.';
+      resultElement.textContent = 'Por favor, introduce el peso y selecciona un ejercicio.';
     }
   }
 
-  // Cronómetro y Temporizador
-  let stopwatchInterval;
-  let stopwatchTime = 0;
-  startButton.addEventListener('click', startStopwatch);
-  resetButton.addEventListener('click', resetStopwatch);
-
+  // Funciones del cronómetro
   function startStopwatch() {
-    if (!stopwatchInterval) {
-      stopwatchInterval = setInterval(updateStopwatch, 10);
-      startButton.textContent = 'Pausar';
-    } else {
-      clearInterval(stopwatchInterval);
-      stopwatchInterval = null;
-      startButton.textContent = 'Continuar';
-    }
+    clearInterval(interval);
+    interval = setInterval(updateStopwatch, 1);
   }
 
   function updateStopwatch() {
-    stopwatchTime += 10;
-    stopwatchElement.textContent = formatTime(stopwatchTime);
+    milliseconds += 1;
+    let date = new Date(milliseconds);
+    let minutes = date.getUTCMinutes();
+    let seconds = date.getUTCSeconds();
+    let millis = date.getUTCMilliseconds();
+
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+    millis = millis < 100 ? (millis < 10 ? '00' + millis : '0' + millis) : millis;
+
+    stopwatchElement.textContent = `${minutes}:${seconds}:${millis}`;
   }
 
   function resetStopwatch() {
-    clearInterval(stopwatchInterval);
-    stopwatchInterval = null;
-    stopwatchTime = 0;
+    clearInterval(interval);
+    milliseconds = 0;
     stopwatchElement.textContent = '00:00:00.000';
-    startButton.textContent = 'Iniciar';
   }
 
-  function formatTime(time) {
-    const hours = Math.floor(time / (60 * 60 * 1000));
-    const minutes = Math.floor((time % (60 * 60 * 1000)) / (60 * 1000));
-    const seconds = Math.floor((time % (60 * 1000)) / 1000);
-    const milliseconds = time % 1000;
-    return `${padTime(hours)}:${padTime(minutes)}:${padTime(seconds)}.${padTime(milliseconds, 3)}`;
-  }
-
-  function padTime(value, length = 2) {
-    return value.toString().padStart(length, '0');
-  }
+  // Event listeners para el cronómetro
+  startButton.addEventListener('click', startStopwatch);
+  resetButton.addEventListener('click', resetStopwatch);
 });

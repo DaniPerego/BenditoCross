@@ -6,11 +6,17 @@
   }
   
   .clock {
-    font-size: 48px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 42px;
     color: var(--color-blanco);
     margin-bottom: 20px;
     background-color: var(--color-rojo);
     border-radius: 4px;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   }
   
   .content {

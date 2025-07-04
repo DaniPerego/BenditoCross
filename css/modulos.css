@@ -1,5 +1,6 @@
 .solapa1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Helvetica, sans-serif;
+    font-family: var(--font-heading);
+    font-weight: 700;
     background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)), url(img/pesas_rusas.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -9,8 +10,9 @@
   
   /*section modulos*/
   .modulos {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 24px;
     text-align: center;
     display: grid;
     grid-template-columns: minmax(100px, 1fr) 1fr;
@@ -22,11 +24,20 @@
   .modulos>div {
     border-radius: 4px;
     place-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
   }
-  p {
-    font-weight: bold;
-    font-size: 30px;
+  .modulos p {
+    font-weight: 700;
+    font-size: 22px;
     color: rgb(255, 252, 252);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 10px;
+    line-height: 1.2;
   }
  
   #modul1 {
@@ -70,8 +81,9 @@
 
   /* HORARIOS*/
 .horarios {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 24px;
     text-align: center;
     display: grid;
     grid-template-columns: minmax(100px, 1fr) 1fr;
@@ -83,6 +95,10 @@
   .horarios>div {
     border-radius: 4px;
     place-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
   }
   
   #horario1 {
@@ -115,4 +131,27 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+  }
+
+  .horarios p {
+    font-weight: 700;
+    font-size: 22px;
+    color: rgb(255, 252, 252);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 10px;
+    line-height: 1.2;
+  }
+
+  /* Ajustes responsivos */
+  @media (max-width: 768px) {
+    .modulos p, .horarios p {
+        font-size: 18px;
+        padding: 5px;
+    }
+    
+    .modulos, .horarios {
+        font-size: 20px;
+    }
   }

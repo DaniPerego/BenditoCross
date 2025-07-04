@@ -3,10 +3,12 @@
     --color-blanco: #ffffff;
     --color-gris: #333;
     --color-rojo: red;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
   }
   
-  body {
-    font-family: Impact, 'Arial Narrow Bold', sans-serif, Arial, Helvetica, sans-serif;
+ body {
+    font-family: var(--font-body);
     margin: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.733)), 
     url(../img/crossfit-l_0.jpg);
@@ -14,8 +16,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-  }
-  
+}
+
+/* Agregamos las fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
+
+
   header {
     text-align: center;
     padding: 5% 10%;

@@ -1,5 +1,5 @@
 
-[
+const videos = [
   { nombre: "Sentadilla", url: "https://www.youtube.com/embed/0pkjOk0EiAk?si=w4cIw-gpjqq3z3ct" },
   { nombre: "Peso muerto", url: "https://www.youtube.com/embed/rMvwVtlqjTE?si=-nQ00r8PXdoPTEjO" },
   { nombre: "Press de banca", url: "https://www.youtube.com/embed/1ZXobu7JvvE?si=bjYRANwGdUR2ULb0" },
@@ -34,7 +34,7 @@
   { nombre: "Burpee", url: "https://www.youtube.com/embed/TL8SMp7RdXQ?si=NGq_8tA9EC-Sig1y" },
   { nombre: "Sit Up", url: "https://www.youtube.com/embed/azumEfnk-GI?si=ShA-zKlw3OZjGDXS" },
   { nombre: "Russian Twist", url: "https://www.youtube.com/embed/VIZX2Ru9qU8?si=5R7bwVgtxF7hrsMF" }
-]
+];
 
 document.addEventListener('DOMContentLoaded', function() {
   const contenedor = document.getElementById('videos_ejercicios');
